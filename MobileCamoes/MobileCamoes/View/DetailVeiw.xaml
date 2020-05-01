@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileCamoes.View.DetailVeiw" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="{Binding Poster}"/>
+
+                    <Label Text="{Binding Name}"                                                                           
+                                       TextColor="White"
+                                       FontSize="20"
+                                       BackgroundColor="Gray"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Start"/>
+
+                    <Label Text="Data de Criação"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       BackgroundColor="Gray"
+                                        HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="End"/>
+
+                    <Label Text="{Binding RealeaseDate}"
+                                       TextColor="White"
+                                        HorizontalTextAlignment="Center"
+                                       BackgroundColor="Gray"
+                                       HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"/>
+
+                    <Label Text="Nota"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       BackgroundColor="Gray"
+                                        HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="End"/>
+
+                    <Label Text="{Binding VoteAverage}"
+                                       TextColor="White"
+                                        FontSize="18"
+                                       BackgroundColor="Gray"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="End"/>
+
+                    <Label Text="Descrição"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       BackgroundColor="Gray"
+                                        HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="End"/>
+
+                    <Label Text="{Binding Overview}"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       BackgroundColor="Gray"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="End"/>
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

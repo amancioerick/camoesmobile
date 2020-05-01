@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileCamoes.View.MainView"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Items}"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand" 
+                      BackgroundColor="Gray"
+                     SelectionMode="None"
+                     ItemTapped="ListView_ItemTapped"
+                      RowHeight="500">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Name}"
+                                       TextColor="White"
+                                       FontSize="20"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Start"
+                                       BackgroundColor="Black"/>
+                                <Image Source="{Binding Poster}"
+                                       HorizontalOptions="FillAndExpand"
+                                       VerticalOptions="FillAndExpand"/>
+                                <Label Text="{Binding Overview}"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       BackgroundColor="Black"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="End"
+                                       MaxLines="9"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
