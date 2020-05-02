@@ -16,6 +16,8 @@ namespace MobileCamoes.ViewModel
             Overview = serie.Overview;
             RealeaseDate = serie.ReleaseDate;
             VoteAverage = serie.VoteAverage;
+            Poster = serie.Poster;
+
         }
 
 
@@ -67,10 +69,17 @@ namespace MobileCamoes.ViewModel
             }
         }
 
-    }
+        private string poster;
+        public string Poster
+        {
+            get => poster;
+            set
+            {
+                poster = value;
+                OnPropertyChanged();
+            }
+        }
 
     }
-    
 
-  
-
+    }
