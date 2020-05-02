@@ -49,7 +49,7 @@ namespace MobileCamoes.ViewModel
         private string realeasedate;
         public string RealeaseDate
         {
-            get => realeaseDate;
+            get => realeasedate;
             set
             {
                 realeasedate = value;
@@ -61,7 +61,7 @@ namespace MobileCamoes.ViewModel
         private double voteaverage;
         public double VoteAverage
         {
-            get => voteAverage;
+            get => voteaverage;
             set
             {
                 voteaverage = value;
@@ -83,3 +83,7 @@ namespace MobileCamoes.ViewModel
     }
 
     }
+    
+
+  
+
