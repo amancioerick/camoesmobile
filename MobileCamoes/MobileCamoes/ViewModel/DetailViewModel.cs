@@ -1,4 +1,4 @@
-﻿using MobileCamoes.Model;
+using MobileCamoes.Model;
 using MobileCamoes.ViewModel.Base;
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,9 @@ namespace MobileCamoes.ViewModel
         {
             DetailSerie = serie;
             Name = serie.Name;
+            Overview = serie.Overview;
+            RealeaseDate = serie.ReleaseDate;
+            VoteAverage = serie.VoteAverage;
         }
 
 
@@ -27,6 +30,39 @@ namespace MobileCamoes.ViewModel
             set
             {
                 name = value;
+                OnPropertyChanged();
+            }
+        }
+        private string overview;
+        public string Overview
+        {
+            get => Overview;
+            set
+            {
+                overview = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string realeasedate;
+        public string RealeaseDate
+        {
+            get => RealeaseDate;
+            set
+            {
+                realeasedate = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+        private double voteaverage;
+        public double VoteAverage
+        {
+            get => VoteAverage;
+            set
+            {
+                voteaverage = value;
                 OnPropertyChanged();
             }
         }
